@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     //Outlets
     @IBOutlet weak var makePicker: UIPickerView!
     @IBOutlet weak var modelPicker: UIPickerView!
+    @IBOutlet weak var yearPicker: UIPickerView!
+    
     @IBOutlet weak var chosenCarText: UITextField!
     @IBOutlet weak var addCar: UIButton!
     @IBOutlet weak var tableView: UITableView!
@@ -22,25 +24,71 @@ class ViewController: UIViewController {
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     
     //Lists
-    let makeList = ["Audi", "BMW", "Ferrari", "Porsche"]
+    var makeList = [
+        "Acura",
+        "Alfa Romeo",
+        "Aston Martin",
+        "Audi",
+        "Bentley",
+        "BMW",
+        "Buick",
+        "Cadillac",
+        "Chevrolet",
+        "Chrylser",
+        "Dodge",
+        "Fiat",
+        "Ford",
+        "GMC",
+        "Honda",
+        "Hyundai",
+        "Infiniti",
+        "Jaguar",
+        "Jeep",
+        "Kia",
+        "Land Rover",
+        "Lexus",
+        "Lincoln",
+        "Maserati",
+        "Mazda",
+        "McLaren",
+        "Mercedes Benz",
+        "MINI",
+        "Mitsubishi",
+        "Nissan",
+        "Porsche",
+        "Rolls Royce",
+        "Scion",
+        "Subaru",
+        "Tesla",
+        "Toyota",
+        "Volkswagon",
+        "Volvo"
+    ]
+
     
     let modelList = ["S8", "M3", "458 Italia", "Cayman R"]
     
-    //Cars
-    let db = Dictionary<String,Dictionary<String,Dictionary<String,String>>>()
+    let yearList = ["2018", "2017", "2016", "2015", "2014"]
     
-    
-    
+
+    //Variables for selected car
     var chosenMake = "" {
         
         didSet{
-            chosenCarText.text = chosenMake + " " + chosenModel
+            chosenCarText.text = chosenYear + " " + chosenMake + " " + chosenModel
         }
     }
     var chosenModel = "" {
         
         didSet{
-            chosenCarText.text = chosenMake + " " + chosenModel
+            chosenCarText.text = chosenYear + " " + chosenMake + " " + chosenModel
+        }
+    }
+    
+    var chosenYear = "" {
+        
+        didSet{
+            chosenCarText.text = chosenYear + " " + chosenMake + " " + chosenModel
         }
     }
     
@@ -52,10 +100,12 @@ class ViewController: UIViewController {
         
         chosenMake = makeList[0]
         chosenModel = modelList[0]
-        chosenCarText.text = chosenMake + " " + chosenModel
+        chosenYear = yearList[0]
+        chosenCarText.text = chosenYear + " " + chosenMake + " " + chosenModel
         
         makePicker.delegate = self
         modelPicker.delegate = self
+        yearPicker.delegate = self
         
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "bgblurry.jpg")
@@ -123,8 +173,12 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
             return makeList.count
         }
         
-        else {
+        else if pickerView == modelPicker{
             return modelList.count
+        }
+        
+        else {
+            return yearList.count
         }
     }
     
@@ -134,9 +188,14 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
             return makeList[row]
         }
         
-        else {
+        else if pickerView == modelPicker{
             return modelList[row]
         }
+        
+        else {
+            return yearList[row]
+        }
+        
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -145,8 +204,12 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
             chosenMake = makeList[row]
         }
         
-        else {
+        else if pickerView == modelPicker{
             chosenModel = modelList[row]
+        }
+        
+        else {
+            chosenYear = yearList[row]
         }
     }
     

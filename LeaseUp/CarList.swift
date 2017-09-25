@@ -10,23 +10,7 @@ import Foundation
 
 var db = Dictionary<String,Dictionary<String,Dictionary<String,String>>>()
 
-let Acura = [
-    "ILX",
-    "MDX",
-    "RDX",
-    "TLX"
-]
 
-let AlfaRomeo = [
-    "4C",
-    "Guilia"
-]
-
-let AstonMartin = [
-    "DB 9",
-    "V12 Vantage S",
-    "V8 Vantage"
-]
 
 var makes = [
     "Acura",
