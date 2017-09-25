@@ -18,7 +18,7 @@ const make = 'http://www.swapalease.com/lease/BMW/search.aspx?&ltp=all';
 
 const year = 'http://www.swapalease.com/lease/BMW/4-Series/search.aspx';
 
-DataService.testCase(year);
+DataService.testCase(make);
 
 
 

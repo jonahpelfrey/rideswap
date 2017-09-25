@@ -6,7 +6,7 @@ var Q = require('q');
 module.exports = {
 
 	testCase: function(givenUrl) {
-		getYearsForModel(givenUrl);
+		getModelsForMake(givenUrl);
 	},
 
 	getFullPageResults: function(givenUrl) {
@@ -212,8 +212,11 @@ function getModelsForMake(givenUrl){
 			$('#search-wrap').children('div.search-section-wrap').eq(1).children('div.search-para-wrap').eq(0).children('a').each(function(i, element){
 
 				var cur = $(this).text().trim().split("(");
+				
 				var car = cur[0].trim();
-				console.log(car);
+				var num = cur[1].trim().split(")");
+				var n = num[0].trim();
+				console.log(car + "|" + n + "|");
 			});
 
 			modelObj = {};
