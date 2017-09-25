@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F0B93C6B1F72E09A001E055A"
-               BuildableName = "LeaseUp.app"
-               BlueprintName = "LeaseUp"
-               ReferencedContainer = "container:LeaseUp.xcodeproj">
+               BuildableName = "RideSwap.app"
+               BlueprintName = "RideSwap"
+               ReferencedContainer = "container:RideSwap.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F0B93C7F1F72E09B001E055A"
-               BuildableName = "LeaseUpTests.xctest"
-               BlueprintName = "LeaseUpTests"
-               ReferencedContainer = "container:LeaseUp.xcodeproj">
+               BuildableName = "RideSwapTests.xctest"
+               BlueprintName = "RideSwapTests"
+               ReferencedContainer = "container:RideSwap.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F0B93C8A1F72E09B001E055A"
-               BuildableName = "LeaseUpUITests.xctest"
-               BlueprintName = "LeaseUpUITests"
-               ReferencedContainer = "container:LeaseUp.xcodeproj">
+               BuildableName = "RideSwapUITests.xctest"
+               BlueprintName = "RideSwapUITests"
+               ReferencedContainer = "container:RideSwap.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F0B93C6B1F72E09A001E055A"
-            BuildableName = "LeaseUp.app"
-            BlueprintName = "LeaseUp"
-            ReferencedContainer = "container:LeaseUp.xcodeproj">
+            BuildableName = "RideSwap.app"
+            BlueprintName = "RideSwap"
+            ReferencedContainer = "container:RideSwap.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F0B93C6B1F72E09A001E055A"
-            BuildableName = "LeaseUp.app"
-            BlueprintName = "LeaseUp"
-            ReferencedContainer = "container:LeaseUp.xcodeproj">
+            BuildableName = "RideSwap.app"
+            BlueprintName = "RideSwap"
+            ReferencedContainer = "container:RideSwap.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F0B93C6B1F72E09A001E055A"
-            BuildableName = "LeaseUp.app"
-            BlueprintName = "LeaseUp"
-            ReferencedContainer = "container:LeaseUp.xcodeproj">
+            BuildableName = "RideSwap.app"
+            BlueprintName = "RideSwap"
+            ReferencedContainer = "container:RideSwap.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

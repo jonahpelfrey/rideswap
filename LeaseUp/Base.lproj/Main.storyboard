@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LeaseUp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RideSwap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,6 +22,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgblurry" translatesAutoresizingMaskIntoConstraints="NO" id="UWC-B8-eWv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3av-MW-f2F">
                                 <rect key="frame" x="16" y="80" width="165" height="125"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -59,7 +63,7 @@
         <!--Login View Controller-->
         <scene sceneID="E6C-Kj-eVC">
             <objects>
-                <viewController id="pyI-xq-wC3" customClass="LoginViewController" customModule="LeaseUp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pyI-xq-wC3" customClass="LoginViewController" customModule="RideSwap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X4t-i4-b2o"/>
                         <viewControllerLayoutGuide type="bottom" id="Ju5-hW-uNv"/>
@@ -68,12 +72,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginScreen" translatesAutoresizingMaskIntoConstraints="NO" id="UmQ-JJ-cxx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginS" translatesAutoresizingMaskIntoConstraints="NO" id="UmQ-JJ-cxx">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TgT-Kh-eWM">
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TgT-Kh-eWM">
                                 <rect key="frame" x="72" y="499" width="231" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="231" id="Nys-8h-K5N"/>
+                                    <constraint firstAttribute="height" constant="30" id="Oxf-X0-veh"/>
+                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -83,9 +91,13 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rT5-YL-LhQ">
-                                <rect key="frame" x="72" y="556" width="231" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rT5-YL-LhQ">
+                                <rect key="frame" x="72" y="542" width="231" height="30"/>
+                                <color key="backgroundColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2UH-4j-5YY"/>
+                                    <constraint firstAttribute="width" constant="231" id="xub-pe-Nhr"/>
+                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -111,10 +123,14 @@
                         <constraints>
                             <constraint firstItem="Ju5-hW-uNv" firstAttribute="top" secondItem="UmQ-JJ-cxx" secondAttribute="bottom" id="4L2-Hc-VOn"/>
                             <constraint firstItem="UmQ-JJ-cxx" firstAttribute="top" secondItem="8fi-8I-eyP" secondAttribute="top" id="73t-tS-P0X"/>
+                            <constraint firstItem="dZT-gV-QbV" firstAttribute="top" secondItem="rT5-YL-LhQ" secondAttribute="bottom" constant="30" id="CL7-fu-sjE"/>
                             <constraint firstItem="dZT-gV-QbV" firstAttribute="leading" secondItem="8fi-8I-eyP" secondAttribute="leadingMargin" constant="125" id="Ckb-K8-Tcj"/>
+                            <constraint firstItem="rT5-YL-LhQ" firstAttribute="centerX" secondItem="8fi-8I-eyP" secondAttribute="centerX" id="EEP-Ah-LLH"/>
                             <constraint firstAttribute="trailing" secondItem="UmQ-JJ-cxx" secondAttribute="trailing" id="Nyy-1V-atg"/>
+                            <constraint firstItem="TgT-Kh-eWM" firstAttribute="centerX" secondItem="8fi-8I-eyP" secondAttribute="centerX" id="pxs-Io-A9k"/>
                             <constraint firstItem="Ju5-hW-uNv" firstAttribute="top" secondItem="dZT-gV-QbV" secondAttribute="bottom" constant="37" id="sIZ-V5-Grc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dZT-gV-QbV" secondAttribute="trailing" constant="125" id="scD-6G-Hdo"/>
+                            <constraint firstItem="rT5-YL-LhQ" firstAttribute="top" secondItem="TgT-Kh-eWM" secondAttribute="bottom" constant="13" id="t67-E4-VCH"/>
                             <constraint firstItem="UmQ-JJ-cxx" firstAttribute="leading" secondItem="8fi-8I-eyP" secondAttribute="leading" id="zi1-Fr-5BR"/>
                         </constraints>
                     </view>
@@ -130,6 +146,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="loginScreen" width="375" height="667"/>
+        <image name="bgblurry" width="1152" height="2048"/>
+        <image name="loginS" width="375" height="667"/>
     </resources>
 </document>

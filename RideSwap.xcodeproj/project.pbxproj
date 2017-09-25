@@ -15,6 +15,8 @@
 		F0B93C7A1F72E09A001E055A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B93C781F72E09A001E055A /* LaunchScreen.storyboard */; };
 		F0B93C851F72E09B001E055A /* LeaseUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B93C841F72E09B001E055A /* LeaseUpTests.swift */; };
 		F0B93C901F72E09B001E055A /* LeaseUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B93C8F1F72E09B001E055A /* LeaseUpUITests.swift */; };
+		F0F606D91F795E7300DE877B /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F606D81F795E7300DE877B /* Device.swift */; };
+		F0F606DB1F7965E000DE877B /* CarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F606DA1F7965E000DE877B /* CarList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,19 +38,21 @@
 
 /* Begin PBXFileReference section */
 		F09FE94C1F757CBB0076A8F6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		F0B93C6C1F72E09A001E055A /* LeaseUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeaseUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0B93C6C1F72E09A001E055A /* RideSwap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideSwap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0B93C6F1F72E09A001E055A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0B93C711F72E09A001E055A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F0B93C741F72E09A001E055A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0B93C761F72E09A001E055A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0B93C791F72E09A001E055A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0B93C7B1F72E09A001E055A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0B93C801F72E09B001E055A /* LeaseUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeaseUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0B93C801F72E09B001E055A /* RideSwapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RideSwapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0B93C841F72E09B001E055A /* LeaseUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaseUpTests.swift; sourceTree = "<group>"; };
 		F0B93C861F72E09B001E055A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0B93C8B1F72E09B001E055A /* LeaseUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeaseUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0B93C8B1F72E09B001E055A /* RideSwapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RideSwapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0B93C8F1F72E09B001E055A /* LeaseUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaseUpUITests.swift; sourceTree = "<group>"; };
 		F0B93C911F72E09B001E055A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0F606D81F795E7300DE877B /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		F0F606DA1F7965E000DE877B /* CarList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +93,9 @@
 		F0B93C6D1F72E09A001E055A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F0B93C6C1F72E09A001E055A /* LeaseUp.app */,
-				F0B93C801F72E09B001E055A /* LeaseUpTests.xctest */,
-				F0B93C8B1F72E09B001E055A /* LeaseUpUITests.xctest */,
+				F0B93C6C1F72E09A001E055A /* RideSwap.app */,
+				F0B93C801F72E09B001E055A /* RideSwapTests.xctest */,
+				F0B93C8B1F72E09B001E055A /* RideSwapUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,8 +105,10 @@
 			children = (
 				F0B93C6F1F72E09A001E055A /* AppDelegate.swift */,
 				F0B93C711F72E09A001E055A /* ViewController.swift */,
+				F0F606DA1F7965E000DE877B /* CarList.swift */,
 				F0B93C731F72E09A001E055A /* Main.storyboard */,
 				F09FE94C1F757CBB0076A8F6 /* LoginViewController.swift */,
+				F0F606D81F795E7300DE877B /* Device.swift */,
 				F0B93C761F72E09A001E055A /* Assets.xcassets */,
 				F0B93C781F72E09A001E055A /* LaunchScreen.storyboard */,
 				F0B93C7B1F72E09A001E055A /* Info.plist */,
@@ -131,9 +137,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F0B93C6B1F72E09A001E055A /* LeaseUp */ = {
+		F0B93C6B1F72E09A001E055A /* RideSwap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0B93C941F72E09B001E055A /* Build configuration list for PBXNativeTarget "LeaseUp" */;
+			buildConfigurationList = F0B93C941F72E09B001E055A /* Build configuration list for PBXNativeTarget "RideSwap" */;
 			buildPhases = (
 				F0B93C681F72E09A001E055A /* Sources */,
 				F0B93C691F72E09A001E055A /* Frameworks */,
@@ -143,14 +149,14 @@
 			);
 			dependencies = (
 			);
-			name = LeaseUp;
+			name = RideSwap;
 			productName = LeaseUp;
-			productReference = F0B93C6C1F72E09A001E055A /* LeaseUp.app */;
+			productReference = F0B93C6C1F72E09A001E055A /* RideSwap.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F0B93C7F1F72E09B001E055A /* LeaseUpTests */ = {
+		F0B93C7F1F72E09B001E055A /* RideSwapTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0B93C971F72E09B001E055A /* Build configuration list for PBXNativeTarget "LeaseUpTests" */;
+			buildConfigurationList = F0B93C971F72E09B001E055A /* Build configuration list for PBXNativeTarget "RideSwapTests" */;
 			buildPhases = (
 				F0B93C7C1F72E09B001E055A /* Sources */,
 				F0B93C7D1F72E09B001E055A /* Frameworks */,
@@ -161,14 +167,14 @@
 			dependencies = (
 				F0B93C821F72E09B001E055A /* PBXTargetDependency */,
 			);
-			name = LeaseUpTests;
+			name = RideSwapTests;
 			productName = LeaseUpTests;
-			productReference = F0B93C801F72E09B001E055A /* LeaseUpTests.xctest */;
+			productReference = F0B93C801F72E09B001E055A /* RideSwapTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F0B93C8A1F72E09B001E055A /* LeaseUpUITests */ = {
+		F0B93C8A1F72E09B001E055A /* RideSwapUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0B93C9A1F72E09B001E055A /* Build configuration list for PBXNativeTarget "LeaseUpUITests" */;
+			buildConfigurationList = F0B93C9A1F72E09B001E055A /* Build configuration list for PBXNativeTarget "RideSwapUITests" */;
 			buildPhases = (
 				F0B93C871F72E09B001E055A /* Sources */,
 				F0B93C881F72E09B001E055A /* Frameworks */,
@@ -179,9 +185,9 @@
 			dependencies = (
 				F0B93C8D1F72E09B001E055A /* PBXTargetDependency */,
 			);
-			name = LeaseUpUITests;
+			name = RideSwapUITests;
 			productName = LeaseUpUITests;
-			productReference = F0B93C8B1F72E09B001E055A /* LeaseUpUITests.xctest */;
+			productReference = F0B93C8B1F72E09B001E055A /* RideSwapUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +219,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F0B93C671F72E09A001E055A /* Build configuration list for PBXProject "LeaseUp" */;
+			buildConfigurationList = F0B93C671F72E09A001E055A /* Build configuration list for PBXProject "RideSwap" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -226,9 +232,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F0B93C6B1F72E09A001E055A /* LeaseUp */,
-				F0B93C7F1F72E09B001E055A /* LeaseUpTests */,
-				F0B93C8A1F72E09B001E055A /* LeaseUpUITests */,
+				F0B93C6B1F72E09A001E055A /* RideSwap */,
+				F0B93C7F1F72E09B001E055A /* RideSwapTests */,
+				F0B93C8A1F72E09B001E055A /* RideSwapUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -265,9 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F606DB1F7965E000DE877B /* CarList.swift in Sources */,
 				F09FE94D1F757CBB0076A8F6 /* LoginViewController.swift in Sources */,
 				F0B93C721F72E09A001E055A /* ViewController.swift in Sources */,
 				F0B93C701F72E09A001E055A /* AppDelegate.swift in Sources */,
+				F0F606D91F795E7300DE877B /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,12 +300,12 @@
 /* Begin PBXTargetDependency section */
 		F0B93C821F72E09B001E055A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F0B93C6B1F72E09A001E055A /* LeaseUp */;
+			target = F0B93C6B1F72E09A001E055A /* RideSwap */;
 			targetProxy = F0B93C811F72E09B001E055A /* PBXContainerItemProxy */;
 		};
 		F0B93C8D1F72E09B001E055A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F0B93C6B1F72E09A001E055A /* LeaseUp */;
+			target = F0B93C6B1F72E09A001E055A /* RideSwap */;
 			targetProxy = F0B93C8C1F72E09B001E055A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -452,7 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = JP.LeaseUpTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeaseUp.app/LeaseUp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RideSwap.app/RideSwap";
 			};
 			name = Debug;
 		};
@@ -467,7 +475,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = JP.LeaseUpTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeaseUp.app/LeaseUp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RideSwap.app/RideSwap";
 			};
 			name = Release;
 		};
@@ -502,7 +510,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F0B93C671F72E09A001E055A /* Build configuration list for PBXProject "LeaseUp" */ = {
+		F0B93C671F72E09A001E055A /* Build configuration list for PBXProject "RideSwap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F0B93C921F72E09B001E055A /* Debug */,
@@ -511,7 +519,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F0B93C941F72E09B001E055A /* Build configuration list for PBXNativeTarget "LeaseUp" */ = {
+		F0B93C941F72E09B001E055A /* Build configuration list for PBXNativeTarget "RideSwap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F0B93C951F72E09B001E055A /* Debug */,
@@ -520,7 +528,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F0B93C971F72E09B001E055A /* Build configuration list for PBXNativeTarget "LeaseUpTests" */ = {
+		F0B93C971F72E09B001E055A /* Build configuration list for PBXNativeTarget "RideSwapTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F0B93C981F72E09B001E055A /* Debug */,
@@ -529,7 +537,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F0B93C9A1F72E09B001E055A /* Build configuration list for PBXNativeTarget "LeaseUpUITests" */ = {
+		F0B93C9A1F72E09B001E055A /* Build configuration list for PBXNativeTarget "RideSwapUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F0B93C9B1F72E09B001E055A /* Debug */,

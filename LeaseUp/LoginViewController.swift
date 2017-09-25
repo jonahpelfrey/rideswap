@@ -20,7 +20,9 @@ class LoginViewController: UIViewController {
 
         //Load background
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "loginScreen.png")
+        
+        backgroundImage.image = UIImage(named: "loginS.png")
+
         backgroundImage.contentMode = UIViewContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         
@@ -81,21 +83,4 @@ class LoginViewController: UIViewController {
         }
     }
     
-    
-    
-    
-    
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

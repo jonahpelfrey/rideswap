@@ -5,6 +5,10 @@ var Q = require('q');
 
 module.exports = {
 
+	testCase: function(givenUrl) {
+		getModelList(givenUrl);
+	},
+
 	getFullPageResults: function(givenUrl) {
 
 		var p = Q.defer();
@@ -14,7 +18,6 @@ module.exports = {
 
 				var $ = cheerio.load(html);
 
-				
 				var s = {};
 
 				var leases = [];
@@ -200,13 +203,18 @@ function getMakeList(givenUrl){
 
 function getModelList(givenUrl){
 
-	//grab url
-	var p = Q.defer();
 
 	request(givenUrl, function(error, response, html){
 		if(!error && response.statusCode == 200){
 
 			var $ = cheerio.load(html);
+
+			$('#search-wrap').children('div.search-section-wrap').eq(1).children('div.search-para-wrap').eq(0).children('a').each(function(i, element){
+
+				var cur = $(this).text().trim().split("(");
+				var car = cur[0].trim();
+				console.log(car);
+			});
 
 			modelObj = {};
 		}

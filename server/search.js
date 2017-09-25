@@ -14,6 +14,7 @@ const baseUrl = 'http://www.swapalease.com';
 
 const check = 'http://www.swapalease.com/lease/Alabama/search.aspx?zip=53703';
 
+const make = 'http://www.swapalease.com/lease/BMW/search.aspx?&ltp=all';
 
 // let promises = {
 
@@ -28,7 +29,7 @@ const check = 'http://www.swapalease.com/lease/Alabama/search.aspx?zip=53703';
 //Retrieve make list
 // DataService.getMakeListFull();
 
-
+DataService.testCase(make);
 
 
 
