@@ -18,19 +18,6 @@ const make = 'http://www.swapalease.com/lease/BMW/search.aspx?&ltp=all';
 
 const year = 'http://www.swapalease.com/lease/BMW/4-Series/search.aspx';
 
-// let promises = {
-
-// 	fetch: DataService.getFullPageResults(check)
-// }
-
-// Q.all(promises).then(function(results){
-
-// 	console.log(results.fetch);
-// });
-
-//Retrieve make list
-// DataService.getMakeListFull();
-
 DataService.testCase(year);
 
 
