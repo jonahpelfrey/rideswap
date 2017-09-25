@@ -19,5 +19,68 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LeaseUp/ViewController.swift"
+            timestampString = "528062407.623256"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RideSwap.ViewController.yearList.getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "RideSwap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonahpelfrey/Desktop/RS/LeaseUp/ViewController.swift"
+                  timestampString = "528062302.981125"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RideSwap.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; RideSwap.ViewController"
+                  moduleName = "RideSwap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonahpelfrey/Desktop/RS/LeaseUp/ViewController.swift"
+                  timestampString = "528062302.983837"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "3024">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RideSwap.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;RideSwap.ViewController&gt;"
+                  moduleName = "RideSwap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonahpelfrey/Desktop/RS/LeaseUp/ViewController.swift"
+                  timestampString = "528062302.986471"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "2897">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -6,7 +6,7 @@ var Q = require('q');
 module.exports = {
 
 	testCase: function(givenUrl) {
-		getModelList(givenUrl);
+		getYearsForModel(givenUrl);
 	},
 
 	getFullPageResults: function(givenUrl) {
@@ -201,7 +201,7 @@ function getMakeList(givenUrl){
 	});
 }
 
-function getModelList(givenUrl){
+function getModelsForMake(givenUrl){
 
 
 	request(givenUrl, function(error, response, html){
@@ -217,6 +217,23 @@ function getModelList(givenUrl){
 			});
 
 			modelObj = {};
+		}
+	});
+}
+
+function getYearsForModel(givenUrl){
+
+	request(givenUrl, function(error, response, html){
+		if(!error && response.statusCode == 200){
+
+			var $ = cheerio.load(html);
+
+			$('#search-wrap').children('div.search-section-wrap').eq(3).children('div.search-para-wrap').eq(0).children('a').each(function(i, element){
+
+				var cur = $(this).text().trim().split("(");
+				var year = cur[0].trim();
+				console.log(year);
+			});
 		}
 	});
 }

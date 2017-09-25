@@ -16,6 +16,8 @@ const check = 'http://www.swapalease.com/lease/Alabama/search.aspx?zip=53703';
 
 const make = 'http://www.swapalease.com/lease/BMW/search.aspx?&ltp=all';
 
+const year = 'http://www.swapalease.com/lease/BMW/4-Series/search.aspx';
+
 // let promises = {
 
 // 	fetch: DataService.getFullPageResults(check)
@@ -29,7 +31,7 @@ const make = 'http://www.swapalease.com/lease/BMW/search.aspx?&ltp=all';
 //Retrieve make list
 // DataService.getMakeListFull();
 
-DataService.testCase(make);
+DataService.testCase(year);
 
 
 

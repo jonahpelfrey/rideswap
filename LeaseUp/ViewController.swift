@@ -68,7 +68,7 @@ class ViewController: UIViewController {
     
     let modelList = ["S8", "M3", "458 Italia", "Cayman R"]
     
-    let yearList = ["2018", "2017", "2016", "2015", "2014"]
+    let yearList = ["2018", "2017", "2015"]
     
 
     //Variables for selected car
