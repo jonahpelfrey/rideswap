@@ -265,3 +265,7 @@ function getTotalNumberPages(givenUrl){
 	});
 
 }
+
+function filterResultsForPendingOrSold(givenUrl){
+	//Check img listing tag on small thumbnail on results page
+}
