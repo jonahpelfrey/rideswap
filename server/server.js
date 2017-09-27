@@ -43,7 +43,15 @@ app.use(morgan(':method :url :status :res[content-length] - :response-time ms'))
  * Routes
  * =============================================================================
  */
+var router = express.Router();
 
+router.route('/makes')
+.get(function(req, res){
+	res.json("Welcome to the rideswap API!");
+});
+
+app.use('/api', router);
+app.use('/cars/models', require('./cars/models'));
 
 /** 
  * =============================================================================

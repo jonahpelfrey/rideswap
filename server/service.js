@@ -5,8 +5,33 @@ var Q = require('q');
 
 module.exports = {
 
-	testCase: function(givenUrl) {
-		getModelsForMake(givenUrl);
+	getModelsForMake: function(givenUrl){
+
+		request(givenUrl, function(error, response, html){
+			if(!error && response.statusCode == 200){
+
+				var $ = cheerio.load(html);
+				
+				models = [];
+
+				$('#search-wrap').children('div.search-section-wrap').eq(1).children('div.search-para-wrap').eq(0).children('a').each(function(i, element){
+
+					var cur = $(this).text().trim().split("(");
+					
+					var car = cur[0].trim();
+					var num = cur[1].trim().split(")");
+					var n = num[0].trim();
+
+					models.push({"name": car, "number": n});
+					// console.log(car + "|" + n + "|");
+				});
+
+				for(var i = 0; i < models.length; i++)
+				{
+					console.log(models[i]);
+				}
+			}
+		});
 	},
 
 	getFullPageResults: function(givenUrl) {
@@ -180,49 +205,9 @@ function getDetailsPage(givenUrl){
 	return p.promise;
 }
 
-function getMakeList(givenUrl){
-
-	//grab url
-	var p = Q.defer();
-
-	request(givenUrl, function(error, response, html){
-		if(!error && response.statusCode == 200){
-
-			var $ = cheerio.load(html);
-
-			makeObj = {};
-
-			$('#search-wrap').children('div.search-section-wrap').eq(0).children('div.search-para-wrap').eq(0).children('a').each(function(i, element){
-
-				var cur = $(this).attr('title');
-				console.log(cur);
-			});
-		}
-	});
-}
-
-function getModelsForMake(givenUrl){
 
 
-	request(givenUrl, function(error, response, html){
-		if(!error && response.statusCode == 200){
 
-			var $ = cheerio.load(html);
-
-			$('#search-wrap').children('div.search-section-wrap').eq(1).children('div.search-para-wrap').eq(0).children('a').each(function(i, element){
-
-				var cur = $(this).text().trim().split("(");
-				
-				var car = cur[0].trim();
-				var num = cur[1].trim().split(")");
-				var n = num[0].trim();
-				console.log(car + "|" + n + "|");
-			});
-
-			modelObj = {};
-		}
-	});
-}
 
 function getYearsForModel(givenUrl){
 
